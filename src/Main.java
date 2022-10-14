@@ -3,8 +3,10 @@ import creational_patterns.abstract_factory.Factoryproducer;
 import creational_patterns.abstract_factory.Shape;
 
 public class Main {
+    public String name = "Ayanle";
     public static void main(String [] args)
     {
+        //abstract-factory
         AbstractFactory shapeFactory = Factoryproducer.getFactory(false);
         //get an object of Shape Rectangle
         Shape shape1 = shapeFactory.getShape("RECTANGLE");
@@ -24,6 +26,8 @@ public class Main {
         Shape shape4 = shapeFactory1.getShape("SQUARE");
         //call draw method of Shape Square
         shape4.draw();
-        System.out.println("the main function");
+
+        //factory method
+
     }
 }
